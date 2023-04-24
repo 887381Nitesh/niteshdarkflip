@@ -1,0 +1,398 @@
+body{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffc43ac9;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header section---------------------------------------------------------------------------*/
+nav{
+
+    background-color:  #2874f0;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 0px;
+}
+.name{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.name span{
+    color: orange;
+}
+
+.search{
+    background-color: white;
+    padding: 8px;
+    width: 420px;
+    height: 34px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #2874f0;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1),
+    -7px -7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+
+}
+.loginbutton{
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    color: #2874f0;
+}
+.become{
+    margin: 0px 30px;
+    font-size: 18px;
+    color: white;
+}
+.become i{
+    font-size: 15px;
+}
+
+
+.search input{
+    width: 380px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    
+
+}
+
+/*top products section------------------------------------------------------*/
+.topProduct{
+    height: 120px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    padding: 10px 60px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.topProduct_nav{
+    width: 80px;
+   /* height:112px; */
+    cursor: pointer;
+    flex: 1;
+}
+.topProduct_nav img{
+    width: 64px;
+    height: 64px;
+}
+.topProduct_nav p{
+    font-weight: bold;
+    color: white;
+}
+.topProduct_nav:hover p{
+    color: #2874f0;
+}
+/* image part----------------------------------------------------*/
+.Fashion{
+    text-align: center;
+    color: white;
+    background-color: #3f51b5;
+    border: 2px solid white;
+}  
+.Fashion p{
+    font-size: 25px;
+    font-weight: bold;
+    animation: revolve 15s infinite;
+}
+@keyframes revolve {
+    0%{
+        margin-left: 2%
+    }
+    25%{
+        margin-left: 10%
+    }
+    50%{
+        margin-left: 20%
+    }
+    75%{
+        margin-right: 2%;
+    }
+    
+    100%{
+        margin-right: 10%;
+    }
+
+}
+
+
+.Fashion span{
+    color: orange;
+}
+/*--------------------------section mens collections--------------------------------------*/
+.mainBox{
+    height: 500px;
+}
+.tileContainer{
+    height: 200px;
+    width: 32%;
+    margin-left: 6%;
+    margin-top: 2%;
+    box-shadow: 10px 20px 10px #795548;
+    float: left;
+    animation: dance 15s infinite;
+}
+@keyframes dance {
+    0%{
+        transform: rotate(-5deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+
+.tileContainer:hover{
+    transform: scale(1.1);
+
+}
+.tileComponent1{
+width: 52%;
+float: left;
+}
+.tileComponent1 >img{
+width: 100%;
+height: 100%
+}
+.tileComponent2{
+width: 45%;
+float: left;
+margin-left: 3%;
+margin-top: 15%;
+}
+.comHeading{
+    font-size: 25px;
+    font-weight: bold;
+    color: #3b2632;
+}
+.comHeading >a{
+ color: #3b2632 !important
+}
+.comSubHeading{
+    font-size: 20px;
+    color: gray;
+}
+/*------------------------------section mens button collections---------------------------------------------------*/
+.mainContainer{
+    height: 304px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    float: left;
+}
+.containeroffer{
+    width: 280px;
+    height: 100%;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/31d46a8fd93eeedd.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+.containeroffer1{
+    margin-top: 100px;
+    width: 100%;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+.containerOffer1 button{
+    margin-top: 16px;
+    height: 35px;
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border: none;
+}
+.mainBox_womens{
+    height: 500px;
+    background-color: #ffeb3b;
+}
+/* Mobile section-------------------------*/
+.mainBox_mobile{
+    height: 302px;
+    background-color: aliceblue;
+}
+.containeroffer_mobile{
+    width: 280px;
+    height: 100%;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+/* Tv Section-----------------------*/
+.mainBox_Tv{
+    height: 302px;
+    background-color: lightblue;
+}
+.containeroffer_Tv{
+    width: 280px;
+    height: 100%;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/964e5530abdf3180.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+/* home and furniture ------------------------------*/
+.mainBox_Home{
+    height: 500px;
+   background-color: lightblue; 
+}
+.containeroffer_Home{
+    width: 280px;
+    height: 100%;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/898b527fdf29b17a.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+/* beauty item-----------------------------------------------------------*/
+.mainBox_beauty{
+    height: 500px;
+   background-color: ghostwhite;  
+}
+.containeroffer_beauty{
+    width: 280px;
+    height: 100%;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+/* electronics item-----------------------------------------------------------*/
+.mainBox_Electronics{
+    height: 500px;
+    background-color: aquamarine;
+}
+.containeroffer_Electronic{
+    width: 280px;
+    height: 100%;
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+/* footer--------------------------------------------------------------- section*/
+footer{
+    background-color: #29346f;
+    color: white;
+   /* text-align: center;*/
+    font-weight: bold;
+    
+ }
+ .footText{
+    font-size: 20px;
+    text-align: center;
+}
+.footDiv{
+    display: inline-block;
+    width: 32%;
+    border-right: 2px solid white;
+}
+  
+.footDiv span{
+    color: #878787;
+    margin-left: 18%;
+   
+}
+.footDiv p{
+    margin-left: 18%;
+    line-height: 8px;
+}
+ 
+.footDiv1 >a{
+    width: -1%;
+    font-size: 16px;
+    color: white;
+    margin-left: 2%;
+    
+}
+.footDiv1 i{
+    color: orange;
+}
+.footDiv2{
+    text-align: center;
+    display: inline-block;
+    margin-left: 0%;
+    border-right: 2px solid white;
+    width: 32%
+   
+}
+.footDiv2 span{
+    display: block;
+    font-size: 18px;
+}
+.playstore img{
+    display: inline-block;
+    height: 43px;
+    margin-bottom: -3%;
+    margin-top: 7%;
+    border: 1px solid white;
+    margin-left: 3%;
+}
+.footDiv2 i{
+    color: red;
+    font-size: 34px;
+    margin-left: 10px;
+    margin-top: 2%;
+}
+#social2{
+    margin-left: 45%;
+    float:right;   
+}
+.socialLogo2{
+    height: 42px;
+    width: 434px;
+    margin: 1px;
+    margin-top: -30px;
+}
+/* dark mode*/
+.mode {
+    float:right;
+}
+.change {
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 40%;
+    width: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+}
+.dark{
+    background-color: black;
+    color: yellow;
+}
+
+
+  
+
+
+
+
+ 
+  
+  
