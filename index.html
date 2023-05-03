@@ -8,16 +8,27 @@
         <link href="https://i.pinimg.com/474x/15/aa/16/15aa1678d4ee5615c5c53ed5c9968126.jpg" rel="icon"/>
         <link href="style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     </head>
     <body >
+        <!--Coupon content-->
+        <div id="main" style="display: flex;">
+            <div class="mainspace">
+              <div class="popupcontent">
+                <img id="PopupImage" src="https://i.ytimg.com/vi/j6pxFweNQas/maxresdefault.jpg" alt="img"/>
+                    <span class="Text_Coupon">Coupon Code:- FREE250OFF</span>
+                <span id="couponClose"><i class="fa-solid fa-xmark"></i></span>
+              </div>
+            </div>
+          </div>
         <!--Header section------------------------------------------------------------------------------------------------>
+
        <nav>
         <div class="name">   
             Flip<span>kart 
                 <i class="fa-solid fa-clone"></i>
             </span>
            </div>
-
         <div class="search">
             <input type="text" placeholder="Search For Products brands and more">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -26,8 +37,8 @@
         <a href="#" class="become">Become a Seller</a>
         <a href="#" class="become">More<i class="fa-solid fa-angle-down"></i></a>
         <a href="#" class="become">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Cart</a>
+            <i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            
             <!--Dark Mode--------------------------->
             <div class="mode">       
                 <span class="change">OFF </span>
@@ -35,6 +46,7 @@
             </div>     
         
        </nav>
+
         <!--section two-------------------------------------------------------------------------------------------->
         <section class="topProduct">
             <div class="topProduct_nav">
@@ -88,8 +100,8 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-        <!--mens collections header sections--------------------------------- -->
+  
+    <!--mens collections header sections--------------------------------- -->
         <div class="Fashion">
            <p> Men's Top <span>Collections
             <i class="fa-solid fa-shirt"></i>
@@ -621,14 +633,16 @@
                     Contact US</a>
                 <a href="#"> <i class="fa-solid fa-store"></i>
                     Flipkart Stories</a>
-                    <a href="#"><i class="fa-solid fa-handshake-angle"></i>
-                        Help Center</a>    
-        </div>
+                    <a href="#"><i class="fa-solid fa-handshake-angle"></i> Help Center</a>    
+            </div>
         <div id="social2">
             <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt="rupay" class="socialLogo2"/>
          </div>
          <hr/>          
 </footer>
 <script src="script.js"></script>
+<script>
+    window.onload=loadCoupon()
+</script>
     </body>
 </html>

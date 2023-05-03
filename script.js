@@ -35,3 +35,22 @@ $( ".change" ).on("click", function() {
         $( ".change" ).text( "ON" );
     }
 });
+
+//! Popup-Window
+let popupCloseButton=document.querySelector('#couponClose')
+popupCloseButton.addEventListener('click',()=>{
+    document.querySelector('#main').style.display='none';
+})
+
+/*
+function loadCoupon()
+{
+    document.getElementById('coupon').style.visibility='visible';
+    document.getElementById('main').style.opacity='0.7'
+}
+function closeCoupon()
+{
+    document.getElementById('coupon').style.visibility='hidden';
+    document.getElementById('main').style.opacity='1'
+}
+*/
