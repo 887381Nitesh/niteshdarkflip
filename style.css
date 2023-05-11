@@ -76,6 +76,7 @@ nav{
     justify-content: center;
     padding: 10px 60px;
     border-bottom: 1px solid #ccc;
+   
     
 }
 .topProduct_nav{
@@ -94,6 +95,38 @@ nav{
 }
 .topProduct_nav:hover p{
     color: #2874f0;
+}
+/* weather image*/
+.btn_location{
+    border: none;
+    color: blue;
+    border-radius: 4%;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 3px 6px;
+}
+#container_location{
+    width: 13%;
+}
+.wheather_img{
+    height: 50%;
+    width: 30%;
+    margin-top: -7%;
+}
+.location_img{
+    font-size: 20px;
+    color: white;
+    margin-top: -2%;
+}
+#weather{
+    color: white;
+    margin-left: 1%;
+    font-weight: bold;
+    margin-top: -8%;
+}
+#out{
+    color: white;
+    font-weight: bold;
 }
 /* image part----------------------------------------------------*/
 .Fashion{
@@ -443,4 +476,60 @@ footer{
     font-size: 22px;
     font-weight: bold;
     border-radius: 7px;
+}
+
+/* media queries for css screen size*/
+@media screen and (max-width: 500px) {
+    body{
+        background-color: #36f4e9c9;
+    }
+    .name {
+        font-size: 13px;
+        margin-left: 1%;  
+    }
+    .search{
+        width: 204px;
+        height: 30px;
+        margin: 0px 5px;
+    }
+    .loginbutton{
+        padding: 3px 2px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    .become {
+        margin: 0px 6px;
+        font-size: 12px;
+        
+    }
+    .topProduct_nav p {
+        font-size: 10px;
+        padding: 9px;
+    }
+    .tileContainer {
+        height: 82px;
+         width: 57%;
+        margin-left: 5%;
+        margin-top: 4%;  
+    }
+    .comHeading {
+        font-size: 15px;
+        margin-top: -38%;
+    }
+    .comSubHeading {
+        font-size: 9px;
+    }
+    .containeroffer {
+        width: 144px;
+        height: 178%;
+    }
+    .containeroffer1 {
+        margin-top: 280px;
+        width: 100%;
+        font-size: 13px;
+    }
+    .change{
+        margin-left: 0px;
+        padding: 0px;
+    }
 }
